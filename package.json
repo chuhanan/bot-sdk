@@ -1,0 +1,31 @@
+{
+  "name": "bot-sdk",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "shinan <shinan.zheng@ifchange.com>",
+  "license": "MIT",
+  "scripts": {
+    "release:prod": "cross-env BABEL_ENV=rollup rollup -c --configProd"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^8.0.1",
+    "babel-jest": "^23.0.1",
+    "babel-plugin-external-helpers": "^6.22.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "cross-env": "^6.0.3",
+    "rollup": "^1.16.7",
+    "rollup-plugin-babel": "^3.0.7",
+    "rollup-plugin-commonjs": "^10.0.1",
+    "rollup-plugin-livereload": "^0.6.0",
+    "rollup-plugin-node-builtins": "^2.1.2",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-serve": "^1.0.1",
+    "rollup-plugin-uglify": "^6.0.2"
+
+  }
+}

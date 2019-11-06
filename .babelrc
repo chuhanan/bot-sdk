@@ -1,0 +1,31 @@
+{
+  "env": {
+    "rollup": {
+      "presets": [
+        [
+          "env",
+          {
+            "modules": false
+          }
+        ],
+        "stage-0"
+      ],
+      "plugins": [
+        "transform-runtime",
+        "transform-object-rest-spread",
+        "transform-class-properties"
+      ]
+    },
+    "babel": {
+      "presets": [
+        "env",
+        "stage-0"
+      ],
+      "plugins": [
+        "transform-runtime",
+        "transform-object-rest-spread",
+        "transform-class-properties"
+      ]
+    }
+  }
+}
