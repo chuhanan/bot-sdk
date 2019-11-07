@@ -21,7 +21,7 @@ export default class CandidateBot {
     // createBotArea();
     
     //创建图标
-    if (options.showTrigger) {
+    if (options.show_trigger) {
       this.createBotIcon(options);
     }else {
       this.createIframe()
@@ -43,7 +43,8 @@ export default class CandidateBot {
     domFrame.setAttribute('id', botAreaId);
     domFrame.style="border: none;"
     ///index.html?bot_type=${this._options.bot_type}&url=${this._options.url}&position_id=${this.position_id}
-    domFrame.src = `http://192.168.6.216:3333`
+    //http://192.168.6.216:3333
+    domFrame.src = `${this._options.host}/?show_trigger=${this._options.show_trigger}&bot_type=${this._options.bot_type}&url=${this._options.url}&position_id=${this._options.position_id}`
     document.body.appendChild(domFrame);
     this.show()
   }

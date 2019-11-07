@@ -9,7 +9,11 @@
     <script>
       window.onload = function() {
         var bot = new CandidateBot({
-          showTrigger: true
+          show_trigger: false,
+          bot_type: 1,
+          url: window.location.href,
+          position_id: 13,
+          host: window.location.origin
         });
       }
     </script>
